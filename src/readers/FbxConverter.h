@@ -567,6 +567,7 @@ namespace readers {
 			addTextures(result->id.c_str(), result->textures, lambert->Emissive, Material::Texture::Emissive);
 			addTextures(result->id.c_str(), result->textures, lambert->Bump, Material::Texture::Bump);
 			addTextures(result->id.c_str(), result->textures, lambert->NormalMap, Material::Texture::Normal);
+			addTextures(result->id.c_str(), result->textures, lambert->TransparentColor, Material::Texture::Transparency);
 
 			if (lambert->TransparencyFactor.IsValid() && lambert->TransparentColor.IsValid()) {
 				FbxDouble factor = lambert->TransparencyFactor.Get();
