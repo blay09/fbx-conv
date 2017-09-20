@@ -128,7 +128,8 @@ namespace readers {
 			}
 
 			if (scene) {
-				scene->GetGlobalSettings().GetSystemUnit().ConvertScene(scene);
+				FbxSystemUnit::cm.ConvertScene(scene);
+				//scene->GetGlobalSettings().GetSystemUnit().ConvertScene(scene);
 			}
 
 			if (scene)
