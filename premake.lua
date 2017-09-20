@@ -10,7 +10,7 @@
 --       If you try to use this script to build with MinGW you will end
 --       up with a Makefile that has god knows what in it
 
-FBX_SDK_ROOT = "/usr/fbx/"--os.getenv("FBX_SDK_ROOT")
+FBX_SDK_ROOT = os.getenv("FBX_SDK_ROOT")
 if not FBX_SDK_ROOT then
 	printf("ERROR: Environment variable FBX_SDK_ROOT is not set.")
 	printf("Set it to something like: C:\\Program Files\\Autodesk\\FBX\\FBX SDK\\2013.3")
